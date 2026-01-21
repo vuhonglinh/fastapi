@@ -1,8 +1,15 @@
 import torch
 import py_vncorenlp
 from transformers import AutoTokenizer, AutoModel
+import os
+ 
+ 
 
-VNCORENLP_DIR = r"D:\vncorenlp"
+VNCORENLP_DIR = os.getenv(
+    "VNCORENLP_DIR",
+    "/home/linh/vncorenlp"   
+)
+
 MODEL_NAME = "vinai/phobert-large"
  
 rdrsegmenter = py_vncorenlp.VnCoreNLP(
