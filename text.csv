@@ -1,0 +1,609 @@
+id,level,grade,subject,topic,skill_id,text
+1,Primary,1,Math,Số học,arithmetic,Đếm số từ 1 đến 10
+2,Primary,2,Math,Phép cộng,arithmetic,Tính 15 + 7
+3,Primary,3,Math,Phép nhân,arithmetic,Tính 6 nhân 8
+4,Primary,4,Math,Phân số,arithmetic,Rút gọn phân số 6/12
+5,Primary,5,Math,Chu vi diện tích,geometry,Tính chu vi hình chữ nhật
+
+6,Secondary,6,Math,Số nguyên,arithmetic,Tính giá trị biểu thức có số nguyên
+7,Secondary,7,Math,Tỉ lệ thức,algebra,Giải bài toán tỉ lệ thuận
+8,Secondary,8,Math,Phương trình,algebra,Giải phương trình bậc nhất
+9,Secondary,9,Math,Hệ thức lượng,geometry,Áp dụng hệ thức lượng trong tam giác vuông
+10,Secondary,9,Math,Hàm số,function,Nhận biết đồ thị hàm số y = ax + b
+
+11,HighSchool,10,Math,Mệnh đề logic,logic,Phủ định của mệnh đề
+12,HighSchool,10,Math,Vector,geometry,Tính độ dài vector
+13,HighSchool,11,Math,Giới hạn,calculus,Tính giới hạn của dãy số
+14,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm số
+15,HighSchool,12,Math,Khảo sát hàm số,calculus,Khảo sát sự biến thiên của hàm số
+16,HighSchool,12,Math,Phương trình,algebra,Giải phương trình bậc hai
+17,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Tìm cực trị của hàm số
+18,HighSchool,12,Math,Hình không gian,geometry,Tính thể tích khối chóp
+
+19,University,College,Math,Đại số tuyến tính,linear_algebra,Tìm định thức của ma trận
+20,University,College,Math,Đại số tuyến tính,linear_algebra,Giải hệ phương trình tuyến tính
+21,University,University,Math,Giải tích,calculus,Tính tích phân xác định
+22,University,University,Math,Giải tích,calculus,Khảo sát hội tụ của chuỗi số
+23,University,University,Math,Xác suất thống kê,probability,Tính xác suất biến cố
+24,University,University,Math,Xác suất thống kê,statistics,Tính kỳ vọng toán học
+25,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp một
+
+26,Primary,1,Math,Số học,arithmetic,So sánh các số trong phạm vi 20
+27,Primary,2,Math,Số học,arithmetic,Điền số còn thiếu vào dãy số
+28,Primary,3,Math,Phép cộng trừ,arithmetic,Tính 45 - 18
+29,Primary,4,Math,Phân số,arithmetic,So sánh hai phân số cùng mẫu
+30,Primary,5,Math,Đo lường,geometry,Đổi đơn vị đo độ dài từ cm sang m
+
+31,Secondary,6,Math,Số nguyên,arithmetic,So sánh hai số nguyên âm
+32,Secondary,6,Math,Số nguyên,arithmetic,Tính tổng các số nguyên liên tiếp
+33,Secondary,7,Math,Biểu thức đại số,algebra,Rút gọn biểu thức đại số
+34,Secondary,7,Math,Tỉ lệ thức,algebra,Giải bài toán chia theo tỉ lệ
+35,Secondary,8,Math,Phương trình,algebra,Giải phương trình chứa ẩn ở mẫu
+
+36,Secondary,8,Math,Hình học phẳng,geometry,Tính diện tích hình thang
+37,Secondary,9,Math,Hình học phẳng,geometry,Chứng minh hai tam giác đồng dạng
+38,Secondary,9,Math,Hàm số,function,Xác định tính đồng biến nghịch biến của hàm số
+39,Secondary,9,Math,Hàm số,function,Tìm giá trị lớn nhất của hàm bậc nhất
+40,Secondary,9,Math,Xác suất,probability,Tính xác suất rút được bi đỏ từ hộp
+
+41,HighSchool,10,Math,Logic,logic,Xác định mệnh đề đúng sai
+42,HighSchool,10,Math,Logic,logic,Phủ định mệnh đề chứa lượng từ
+43,HighSchool,10,Math,Vector,geometry,Tính tích vô hướng của hai vector
+44,HighSchool,10,Math,Vector,geometry,Xác định góc giữa hai vector
+45,HighSchool,11,Math,Hàm số,function,Vẽ đồ thị hàm số bậc hai
+
+46,HighSchool,11,Math,Giới hạn,calculus,Tính giới hạn hàm số tại vô cực
+47,HighSchool,11,Math,Đạo hàm,calculus,Xác định đạo hàm tại một điểm
+48,HighSchool,11,Math,Đạo hàm,calculus,Viết phương trình tiếp tuyến của đồ thị
+49,HighSchool,12,Math,Khảo sát hàm số,calculus,Lập bảng biến thiên hàm số
+50,HighSchool,12,Math,Khảo sát hàm số,calculus,Tìm khoảng đơn điệu của hàm số
+
+51,HighSchool,12,Math,Phương trình,algebra,Giải phương trình chứa căn
+52,HighSchool,12,Math,Bất phương trình,algebra,Giải bất phương trình bậc nhất
+53,HighSchool,12,Math,Hình không gian,geometry,Tính khoảng cách từ điểm đến mặt phẳng
+54,HighSchool,12,Math,Hình không gian,geometry,Xác định góc giữa đường và mặt
+55,HighSchool,12,Math,Xác suất,probability,Tính xác suất theo quy tắc cộng
+
+56,University,College,Math,Đại số tuyến tính,linear_algebra,Tìm hạng của ma trận
+57,University,College,Math,Đại số tuyến tính,linear_algebra,Tính ma trận nghịch đảo
+58,University,College,Math,Đại số tuyến tính,linear_algebra,Chứng minh các vector độc lập tuyến tính
+59,University,University,Math,Giải tích,calculus,Tính đạo hàm riêng của hàm nhiều biến
+60,University,University,Math,Giải tích,calculus,Kiểm tra tính liên tục của hàm số
+
+61,University,University,Math,Giải tích,calculus,Tính tích phân suy rộng
+62,University,University,Math,Giải tích,calculus,Xét sự hội tụ của tích phân
+63,University,University,Math,Xác suất,probability,Tính phân phối xác suất rời rạc
+64,University,University,Math,Thống kê,statistics,Tính phương sai của mẫu số liệu
+65,University,University,Math,Thống kê,statistics,Tính độ lệch chuẩn của mẫu
+
+66,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tuyến tính
+67,University,University,Math,Phương trình vi phân,differential_equations,Giải bài toán Cauchy
+68,University,University,Math,Logic toán,logic,Chứng minh mệnh đề bằng phản chứng
+69,University,University,Math,Logic toán,logic,Xác định giá trị chân lý của mệnh đề
+70,University,University,Math,Toán rời rạc,logic,Đếm số cách sắp xếp phần tử
+
+71,Primary,1,Math,Số học,arithmetic,Đếm số lượng đồ vật trong hình
+72,Primary,1,Math,Số học,arithmetic,So sánh số lớn hơn nhỏ hơn
+73,Primary,2,Math,Phép cộng,arithmetic,Tính tổng hai số có nhớ
+74,Primary,2,Math,Phép trừ,arithmetic,Tính hiệu hai số trong phạm vi 100
+75,Primary,3,Math,Phép nhân,arithmetic,Nhân số có một chữ số
+76,Primary,3,Math,Phép chia,arithmetic,Chia đều đồ vật thành các phần bằng nhau
+77,Primary,4,Math,Phân số,arithmetic,Xác định tử số và mẫu số
+78,Primary,4,Math,Phân số,arithmetic,Viết phân số biểu diễn phần đã tô màu
+79,Primary,5,Math,Số thập phân,arithmetic,So sánh hai số thập phân
+80,Primary,5,Math,Số thập phân,arithmetic,Cộng hai số thập phân đơn giản
+
+81,Secondary,6,Math,Số nguyên,arithmetic,Thứ tự các số nguyên trên trục số
+82,Secondary,6,Math,Số nguyên,arithmetic,Giải bài toán tăng giảm số nguyên
+83,Secondary,7,Math,Biểu thức đại số,algebra,Thay giá trị vào biểu thức
+84,Secondary,7,Math,Biểu thức đại số,algebra,Rút gọn biểu thức có dấu ngoặc
+85,Secondary,7,Math,Tỉ lệ thức,algebra,Tìm số chưa biết trong tỉ lệ
+86,Secondary,8,Math,Phương trình,algebra,Giải phương trình bậc nhất một ẩn
+87,Secondary,8,Math,Phương trình,algebra,Giải phương trình có dấu giá trị tuyệt đối
+88,Secondary,8,Math,Hình học,geometry,Tính chu vi đa giác đều
+89,Secondary,8,Math,Hình học,geometry,Tính diện tích tam giác vuông
+90,Secondary,9,Math,Hình học,geometry,Chứng minh định lý Pythagore
+
+91,Secondary,9,Math,Hàm số,function,Lập bảng giá trị của hàm số
+92,Secondary,9,Math,Hàm số,function,Xác định đồ thị tương ứng với hàm số
+93,Secondary,9,Math,Xác suất,probability,Tính xác suất gieo xúc xắc
+94,Secondary,9,Math,Xác suất,probability,Tính xác suất rút thẻ từ bộ bài
+95,HighSchool,10,Math,Logic,logic,Xác định mệnh đề kéo theo
+96,HighSchool,10,Math,Logic,logic,Phân biệt mệnh đề và phủ định
+97,HighSchool,10,Math,Vector,geometry,Phân tích vector theo hai vector không cùng phương
+98,HighSchool,10,Math,Vector,geometry,Tìm tọa độ vector trong mặt phẳng
+99,HighSchool,10,Math,Hình học,geometry,Tính khoảng cách giữa hai điểm
+100,HighSchool,10,Math,Hình học,geometry,Tìm trung điểm của đoạn thẳng
+
+101,HighSchool,11,Math,Hàm số,function,Xác định tập xác định của hàm số
+102,HighSchool,11,Math,Hàm số,function,Khảo sát tính chẵn lẻ của hàm số
+103,HighSchool,11,Math,Giới hạn,calculus,Tính giới hạn dãy số khi n tiến tới vô cực
+104,HighSchool,11,Math,Giới hạn,calculus,So sánh hai giới hạn
+105,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm hợp
+106,HighSchool,11,Math,Đạo hàm,calculus,Ứng dụng đạo hàm giải bài toán thực tế
+107,HighSchool,12,Math,Khảo sát hàm số,calculus,Xác định tiệm cận của đồ thị
+108,HighSchool,12,Math,Khảo sát hàm số,calculus,Vẽ đồ thị hàm phân thức
+109,HighSchool,12,Math,Phương trình,algebra,Giải phương trình mũ
+110,HighSchool,12,Math,Phương trình,algebra,Giải phương trình logarit
+
+111,HighSchool,12,Math,Bất phương trình,algebra,Giải bất phương trình mũ
+112,HighSchool,12,Math,Bất phương trình,algebra,Giải hệ bất phương trình
+113,HighSchool,12,Math,Hình không gian,geometry,Tính góc giữa hai mặt phẳng
+114,HighSchool,12,Math,Hình không gian,geometry,Tính thể tích khối lăng trụ
+115,HighSchool,12,Math,Xác suất,probability,Tính xác suất biến cố độc lập
+116,HighSchool,12,Math,Xác suất,probability,Tính xác suất có điều kiện
+117,University,College,Math,Đại số tuyến tính,linear_algebra,Tính trị riêng của ma trận
+118,University,College,Math,Đại số tuyến tính,linear_algebra,Tìm vector riêng tương ứng
+119,University,College,Math,Đại số tuyến tính,linear_algebra,Chéo hóa ma trận
+120,University,College,Math,Đại số tuyến tính,linear_algebra,Giải bài toán không gian vector
+
+121,University,University,Math,Giải tích,calculus,Tính đạo hàm theo hướng
+122,University,University,Math,Giải tích,calculus,Ứng dụng tích phân tính diện tích hình phẳng
+123,University,University,Math,Giải tích,calculus,Ứng dụng tích phân tính thể tích
+124,University,University,Math,Giải tích,calculus,Kiểm tra hội tụ chuỗi số
+125,University,University,Math,Giải tích,calculus,Xét sự hội tụ đều của dãy hàm
+126,University,University,Math,Xác suất,probability,Tính phân phối nhị thức
+127,University,University,Math,Xác suất,probability,Tính phân phối Poisson
+128,University,University,Math,Thống kê,statistics,Tính trung bình cộng của mẫu
+129,University,University,Math,Thống kê,statistics,Lập bảng tần số tần suất
+130,University,University,Math,Thống kê,statistics,Ước lượng tham số thống kê
+
+131,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân Bernoulli
+132,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tách biến
+133,University,University,Math,Logic toán,logic,Chứng minh mệnh đề bằng quy nạp
+134,University,University,Math,Logic toán,logic,Xác định quan hệ suy diễn
+135,University,University,Math,Toán rời rạc,logic,Tính số hoán vị của tập hợp
+136,University,University,Math,Toán rời rạc,logic,Tính số chỉnh hợp không lặp
+137,University,University,Math,Toán rời rạc,logic,Tính số tổ hợp chập k của n phần tử
+138,University,University,Math,Hình học giải tích,geometry,Viết phương trình đường thẳng
+139,University,University,Math,Hình học giải tích,geometry,Viết phương trình mặt phẳng
+140,University,University,Math,Hình học giải tích,geometry,Tính khoảng cách từ điểm đến đường thẳng
+
+141,University,University,Math,Hình học giải tích,geometry,Tìm giao điểm hai đường thẳng
+142,University,University,Math,Hình học giải tích,geometry,Tìm giao tuyến hai mặt phẳng
+143,University,University,Math,Giải tích,calculus,Tính tích phân đường
+144,University,University,Math,Giải tích,calculus,Tính tích phân mặt
+145,University,University,Math,Giải tích,calculus,Ứng dụng đạo hàm trong tối ưu hóa
+146,University,University,Math,Xác suất,probability,Tính xác suất trong không gian mẫu hữu hạn
+147,University,University,Math,Xác suất,probability,Tính kỳ vọng và phương sai của biến ngẫu nhiên
+148,University,University,Math,Thống kê,statistics,Kiểm định giả thuyết thống kê
+149,University,University,Math,Thống kê,statistics,Xây dựng khoảng tin cậy
+150,University,University,Math,Phương trình vi phân,differential_equations,Giải hệ phương trình vi phân
+
+151,Primary,1,Math,Số học,arithmetic,Đếm số lượng học sinh trong lớp
+152,Primary,1,Math,Số học,arithmetic,So sánh hai nhóm đồ vật nhiều ít
+153,Primary,2,Math,Phép cộng,arithmetic,Tính tổng ba số nhỏ
+154,Primary,2,Math,Phép trừ,arithmetic,Tìm số bị trừ khi biết hiệu
+155,Primary,3,Math,Phép nhân,arithmetic,Tính số hình chữ nhật tạo thành
+156,Primary,3,Math,Phép chia,arithmetic,Chia số kẹo cho các bạn
+157,Primary,4,Math,Phân số,arithmetic,Viết phân số bằng hình vẽ
+158,Primary,4,Math,Phân số,arithmetic,So sánh phân số khác mẫu
+159,Primary,5,Math,Số thập phân,arithmetic,Đọc và viết số thập phân
+160,Primary,5,Math,Số thập phân,arithmetic,Làm tròn số thập phân đến hàng đơn vị
+
+161,Secondary,6,Math,Số nguyên,arithmetic,Tính tích hai số nguyên trái dấu
+162,Secondary,6,Math,Số nguyên,arithmetic,Tính giá trị tuyệt đối của số nguyên
+163,Secondary,7,Math,Biểu thức đại số,algebra,Thực hiện phép biến đổi biểu thức
+164,Secondary,7,Math,Biểu thức đại số,algebra,Phân tích biểu thức thành nhân tử
+165,Secondary,7,Math,Tỉ lệ thức,algebra,Giải bài toán chia theo tỉ lệ nghịch
+166,Secondary,8,Math,Phương trình,algebra,Giải phương trình có tham số
+167,Secondary,8,Math,Phương trình,algebra,Giải hệ phương trình bậc nhất
+168,Secondary,8,Math,Hình học,geometry,Tính số đo góc trong đa giác
+169,Secondary,8,Math,Hình học,geometry,Chứng minh hai đường thẳng song song
+170,Secondary,9,Math,Hình học,geometry,Chứng minh ba điểm thẳng hàng
+
+171,Secondary,9,Math,Hàm số,function,Tìm công thức hàm số từ bảng giá trị
+172,Secondary,9,Math,Hàm số,function,Xác định giao điểm của đồ thị hàm số
+173,Secondary,9,Math,Xác suất,probability,Tính xác suất chọn ngẫu nhiên học sinh
+174,Secondary,9,Math,Xác suất,probability,Tính xác suất biến cố đối
+175,HighSchool,10,Math,Logic,logic,Xét tính đúng sai của mệnh đề chứa và hoặc
+176,HighSchool,10,Math,Logic,logic,Viết phủ định của mệnh đề phức
+177,HighSchool,10,Math,Vector,geometry,Chứng minh hai vector cùng phương
+178,HighSchool,10,Math,Vector,geometry,Tìm tọa độ trung điểm bằng vector
+179,HighSchool,10,Math,Hình học,geometry,Tính độ dài đường trung tuyến
+180,HighSchool,10,Math,Hình học,geometry,Chứng minh tam giác cân
+
+181,HighSchool,11,Math,Hàm số,function,Tìm tập giá trị của hàm số
+182,HighSchool,11,Math,Hàm số,function,Xác định tiệm cận đứng của đồ thị
+183,HighSchool,11,Math,Giới hạn,calculus,Tính giới hạn một bên của hàm số
+184,HighSchool,11,Math,Giới hạn,calculus,Chứng minh giới hạn bằng định nghĩa
+185,HighSchool,11,Math,Đạo hàm,calculus,Ứng dụng đạo hàm tìm GTLN GTNN
+186,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm ẩn
+187,HighSchool,12,Math,Khảo sát hàm số,calculus,Xác định số nghiệm của phương trình
+188,HighSchool,12,Math,Khảo sát hàm số,calculus,Khảo sát đồ thị hàm phân thức
+189,HighSchool,12,Math,Phương trình,algebra,Giải phương trình lượng giác
+190,HighSchool,12,Math,Phương trình,algebra,Giải phương trình chứa tham số
+
+191,HighSchool,12,Math,Bất phương trình,algebra,Giải bất phương trình logarit
+192,HighSchool,12,Math,Hình không gian,geometry,Tính khoảng cách giữa hai đường thẳng
+193,HighSchool,12,Math,Hình không gian,geometry,Xác định thiết diện của hình chóp
+194,HighSchool,12,Math,Xác suất,probability,Tính xác suất trong bài toán urn
+195,HighSchool,12,Math,Xác suất,probability,Tính xác suất sử dụng biến cố bổ sung
+196,University,College,Math,Đại số tuyến tính,linear_algebra,Giải bài toán ánh xạ tuyến tính
+197,University,College,Math,Đại số tuyến tính,linear_algebra,Xác định cơ sở của không gian vector
+198,University,University,Math,Thống kê,statistics,Phân tích bảng số liệu thống kê
+199,University,University,Math,Thống kê,statistics,So sánh hai mẫu thống kê
+200,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp hai
+ 
+201,Primary,1,Math,Số học,arithmetic,So sánh số 7 và số 9
+202,Primary,2,Math,Phép cộng,arithmetic,Tính 24 + 36
+203,Primary,2,Math,Phép trừ,arithmetic,Tính 80 - 47
+204,Primary,3,Math,Phép nhân,arithmetic,Tính 7 nhân 9
+205,Primary,3,Math,Phép chia,arithmetic,Tính 56 chia 8
+206,Primary,4,Math,Phân số,arithmetic,Rút gọn phân số 9/15
+207,Primary,4,Math,Phân số,arithmetic,So sánh phân số 3/4 và 5/6
+208,Primary,5,Math,Số thập phân,arithmetic,Cộng hai số thập phân
+209,Primary,5,Math,Số thập phân,arithmetic,Làm tròn số 3.746
+
+210,Primary,1,Math,Số học,arithmetic,Đếm số chấm tròn trong hình
+211,Primary,1,Math,Số học,arithmetic,So sánh số lớn hơn trong hai số
+212,Primary,2,Math,Phép cộng,arithmetic,Tính tổng ba số nhỏ
+213,Primary,2,Math,Phép trừ,arithmetic,Tìm số bị trừ
+214,Primary,3,Math,Phép nhân,arithmetic,Nhân số có một chữ số 
+215,Primary,3,Math,Phép chia,arithmetic,Chia đều kẹo cho các bạn
+216,Primary,4,Math,Phân số,arithmetic,Viết phân số biểu diễn phần tô màu
+217,Primary,4,Math,Phân số,arithmetic,Xác định tử và mẫu số
+218,Primary,5,Math,Số thập phân,arithmetic,So sánh hai số thập phân
+219,Primary,5,Math,Số thập phân,arithmetic,Đọc số thập phân cho trước
+
+220,Secondary,6,Math,Số nguyên,arithmetic,Tính tổng hai số nguyên
+221,Secondary,6,Math,Số nguyên,arithmetic,So sánh hai số nguyên âm
+222,Secondary,6,Math,Số nguyên,arithmetic,Tính giá trị tuyệt đối
+223,Secondary,7,Math,Biểu thức đại số,algebra,Rút gọn biểu thức đại số
+224,Secondary,7,Math,Biểu thức đại số,algebra,Thay giá trị vào biểu thức
+225,Secondary,7,Math,Tỉ lệ thức,algebra,Giải bài toán tỉ lệ thuận
+226,Secondary,8,Math,Phương trình,algebra,Giải phương trình bậc nhất
+227,Secondary,8,Math,Phương trình,algebra,Giải phương trình có ẩn ở mẫu
+228,Secondary,8,Math,Hình học,geometry,Tính diện tích hình thang
+229,Secondary,9,Math,Hình học,geometry,Chứng minh hai tam giác đồng dạng
+
+230,Secondary,9,Math,Hình học,geometry,Tính chu vi tam giác
+231,Secondary,9,Math,Hình học,geometry,Chứng minh định lý Pythagore
+232,Secondary,9,Math,Hàm số,function,Lập bảng giá trị hàm số
+233,Secondary,9,Math,Hàm số,function,Xác định đồ thị hàm bậc nhất
+234,Secondary,9,Math,Xác suất,probability,Tính xác suất gieo xúc xắc
+235,Secondary,9,Math,Xác suất,probability,Tính xác suất rút thẻ
+236,HighSchool,10,Math,Logic,logic,Xác định mệnh đề đúng sai
+237,HighSchool,10,Math,Logic,logic,Phủ định của mệnh đề
+238,HighSchool,10,Math,Vector,geometry,Tính độ dài vector
+239,HighSchool,10,Math,Vector,geometry,Tính tích vô hướng
+
+240,HighSchool,10,Math,Hình học,geometry,Tính khoảng cách giữa hai điểm
+241,HighSchool,10,Math,Hình học,geometry,Chứng minh tam giác cân
+242,HighSchool,11,Math,Hàm số,function,Tìm tập xác định của hàm số
+243,HighSchool,11,Math,Hàm số,function,Xác định tính chẵn lẻ của hàm số
+244,HighSchool,11,Math,Giới hạn,calculus,Tính giới hạn của dãy số
+245,HighSchool,11,Math,Giới hạn,calculus,So sánh hai giới hạn
+246,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm tại một điểm
+247,HighSchool,11,Math,Đạo hàm,calculus,Viết phương trình tiếp tuyến
+248,HighSchool,12,Math,Khảo sát hàm số,calculus,Lập bảng biến thiên
+249,HighSchool,12,Math,Khảo sát hàm số,calculus,Tìm khoảng đơn điệu
+
+250,HighSchool,12,Math,Phương trình,algebra,Giải phương trình bậc hai
+251,HighSchool,12,Math,Phương trình,algebra,Giải phương trình chứa căn
+252,HighSchool,12,Math,Bất phương trình,algebra,Giải bất phương trình bậc nhất
+253,HighSchool,12,Math,Hình không gian,geometry,Tính thể tích khối chóp
+254,HighSchool,12,Math,Hình không gian,geometry,Tính khoảng cách từ điểm đến mặt phẳng
+255,HighSchool,12,Math,Xác suất,probability,Tính xác suất biến cố độc lập
+256,HighSchool,12,Math,Xác suất,probability,Tính xác suất có điều kiện
+257,University,College,Math,Đại số tuyến tính,linear_algebra,Tính định thức ma trận
+258,University,College,Math,Đại số tuyến tính,linear_algebra,Giải hệ phương trình tuyến tính
+259,University,College,Math,Đại số tuyến tính,linear_algebra,Tìm hạng của ma trận
+
+260,University,College,Math,Đại số tuyến tính,linear_algebra,Tính ma trận nghịch đảo
+261,University,University,Math,Giải tích,calculus,Tính tích phân xác định
+262,University,University,Math,Giải tích,calculus,Khảo sát hội tụ chuỗi số
+263,University,University,Math,Xác suất,probability,Tính xác suất biến cố
+264,University,University,Math,Xác suất,probability,Tính phân phối nhị thức
+265,University,University,Math,Thống kê,statistics,Tính kỳ vọng toán học
+266,University,University,Math,Thống kê,statistics,Tính phương sai mẫu
+267,University,University,Math,Thống kê,statistics,Tính độ lệch chuẩn
+268,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp một
+269,University,University,Math,Phương trình vi phân,differential_equations,Giải bài toán Cauchy
+
+270,University,University,Math,Logic toán,logic,Chứng minh mệnh đề bằng phản chứng
+271,University,University,Math,Logic toán,logic,Chứng minh bằng quy nạp
+272,University,University,Math,Toán rời rạc,logic,Tính số hoán vị
+273,University,University,Math,Toán rời rạc,logic,Tính số chỉnh hợp
+274,University,University,Math,Toán rời rạc,logic,Tính số tổ hợp
+275,University,University,Math,Hình học giải tích,geometry,Viết phương trình đường thẳng
+276,University,University,Math,Hình học giải tích,geometry,Viết phương trình mặt phẳng
+277,University,University,Math,Hình học giải tích,geometry,Tính khoảng cách từ điểm đến đường
+278,University,University,Math,Hình học giải tích,geometry,Tìm giao điểm hai đường
+279,University,University,Math,Hình học giải tích,geometry,Tìm giao tuyến hai mặt phẳng
+
+280,University,University,Math,Giải tích,calculus,Tính tích phân suy rộng
+281,University,University,Math,Giải tích,calculus,Kiểm tra hội tụ tích phân
+282,University,University,Math,Giải tích,calculus,Ứng dụng đạo hàm tối ưu hóa
+283,University,University,Math,Giải tích,calculus,Tính đạo hàm riêng
+284,University,University,Math,Giải tích,calculus,Tính tích phân đường
+285,University,University,Math,Giải tích,calculus,Tính tích phân mặt
+286,University,University,Math,Xác suất,probability,Tính xác suất trong không gian mẫu hữu hạn
+287,University,University,Math,Xác suất,probability,Tính kỳ vọng của biến ngẫu nhiên
+288,University,University,Math,Thống kê,statistics,Lập bảng tần số
+289,University,University,Math,Thống kê,statistics,Ước lượng tham số
+
+290,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tuyến tính
+291,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tách biến
+292,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân Bernoulli
+293,University,University,Math,Logic toán,logic,Xác định giá trị chân lý mệnh đề
+294,University,University,Math,Logic toán,logic,Áp dụng luật De Morgan
+295,University,University,Math,Toán rời rạc,logic,Đếm số cách sắp xếp
+296,University,University,Math,Toán rời rạc,logic,Đếm số cách chọn
+297,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm vector riêng
+298,University,University,Math,Đại số tuyến tính,linear_algebra,Tính trị riêng
+299,University,University,Math,Đại số tuyến tính,linear_algebra,Chéo hóa ma trận
+
+300,University,University,Math,Đại số tuyến tính,linear_algebra,Xác định cơ sở không gian vector
+301,University,University,Math,Đại số tuyến tính,linear_algebra,Kiểm tra độc lập tuyến tính
+302,University,University,Math,Đại số tuyến tính,linear_algebra,Giải bài toán ánh xạ tuyến tính
+303,University,University,Math,Giải tích,calculus,Khảo sát hàm số nhiều biến
+304,University,University,Math,Giải tích,calculus,Tính đạo hàm theo hướng
+305,University,University,Math,Giải tích,calculus,Tính tích phân bội
+306,University,University,Math,Xác suất,probability,Tính phân phối Poisson
+307,University,University,Math,Xác suất,probability,Tính phân phối chuẩn
+308,University,University,Math,Thống kê,statistics,Kiểm định giả thuyết
+309,University,University,Math,Thống kê,statistics,Xây dựng khoảng tin cậy
+
+310,University,University,Math,Phương trình vi phân,differential_equations,Giải hệ phương trình vi phân
+311,University,University,Math,Logic toán,logic,Chứng minh tương đương logic
+312,University,University,Math,Logic toán,logic,Phân tích mệnh đề kéo theo
+313,University,University,Math,Toán rời rạc,logic,Tính số đồ thị có điều kiện
+314,University,University,Math,Hình học giải tích,geometry,Viết phương trình mặt cầu
+315,University,University,Math,Hình học giải tích,geometry,Tính bán kính mặt cầu
+316,University,University,Math,Hình học giải tích,geometry,Xác định tâm mặt cầu
+317,University,University,Math,Giải tích,calculus,Tính tích phân từng phần
+318,University,University,Math,Giải tích,calculus,Tính tích phân đổi biến
+319,University,University,Math,Xác suất,probability,Tính xác suất theo biến cố bổ sung
+
+320,University,University,Math,Thống kê,statistics,Phân tích hồi quy đơn
+321,University,University,Math,Thống kê,statistics,Phân tích hồi quy tuyến tính
+322,University,University,Math,Đại số tuyến tính,linear_algebra,Tính chuẩn vector
+323,University,University,Math,Đại số tuyến tính,linear_algebra,Tính tích vô hướng
+324,University,University,Math,Logic toán,logic,Chứng minh phản chứng nâng cao
+325,University,University,Math,Logic toán,logic,Ứng dụng quy nạp mạnh
+326,University,University,Math,Toán rời rạc,logic,Tính số chu trình
+327,University,University,Math,Giải tích,calculus,Tính chuỗi Fourier
+328,University,University,Math,Giải tích,calculus,Tính biến đổi Laplace
+329,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp hai
+
+330,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân Euler
+331,Secondary,8,Math,Hình học,geometry,Tính diện tích hình chữ nhật
+332,Secondary,8,Math,Hình học,geometry,Tính chu vi hình vuông
+333,Secondary,9,Math,Hình học,geometry,Chứng minh hai tam giác bằng nhau
+334,Secondary,9,Math,Hình học,geometry,Áp dụng định lý Pythagore
+335,Secondary,9,Math,Hình học,geometry,Tính đường cao trong tam giác
+
+336,Secondary,9,Math,Hình học,geometry,Tính diện tích tam giác vuông
+337,Secondary,9,Math,Hình học,geometry,Chứng minh hai đường thẳng song song
+338,Secondary,9,Math,Hình học,geometry,Chứng minh ba điểm thẳng hàng
+339,Secondary,9,Math,Hình học,geometry,Tính số đo góc trong tam giác
+340,Secondary,9,Math,Hình học,geometry,Tính chu vi đa giác đều
+
+341,HighSchool,10,Math,Hình học,geometry,Tính khoảng cách giữa hai điểm trong mặt phẳng
+342,HighSchool,10,Math,Hình học,geometry,Tính trung điểm của đoạn thẳng
+343,HighSchool,10,Math,Hình học,geometry,Chứng minh tam giác vuông cân
+344,HighSchool,10,Math,Hình học,geometry,Chứng minh hình bình hành
+345,HighSchool,10,Math,Hình học,geometry,Tính diện tích hình thang cân
+
+346,HighSchool,10,Math,Vector,geometry,Tính độ dài vector trong mặt phẳng
+347,HighSchool,10,Math,Vector,geometry,Tính tích vô hướng của hai vector
+348,HighSchool,10,Math,Vector,geometry,Tìm tọa độ vector chỉ phương
+349,HighSchool,10,Math,Vector,geometry,Chứng minh hai vector cùng phương
+350,HighSchool,10,Math,Vector,geometry,Xác định góc giữa hai vector
+
+351,HighSchool,11,Math,Hình học không gian,geometry,Tính khoảng cách từ điểm đến mặt phẳng
+352,HighSchool,11,Math,Hình học không gian,geometry,Tính thể tích khối chóp
+353,HighSchool,11,Math,Hình học không gian,geometry,Tính thể tích khối lăng trụ
+354,HighSchool,11,Math,Hình học không gian,geometry,Tính góc giữa đường thẳng và mặt phẳng
+355,HighSchool,11,Math,Hình học không gian,geometry,Xác định thiết diện của hình chóp
+
+356,HighSchool,12,Math,Hình học không gian,geometry,Tính khoảng cách giữa hai đường thẳng chéo nhau
+357,HighSchool,12,Math,Hình học không gian,geometry,Tính góc giữa hai mặt phẳng
+358,HighSchool,12,Math,Hình học không gian,geometry,Tính bán kính mặt cầu ngoại tiếp
+359,HighSchool,12,Math,Hình học không gian,geometry,Xác định tâm mặt cầu
+360,HighSchool,12,Math,Hình học không gian,geometry,Viết phương trình mặt cầu
+
+361,HighSchool,11,Math,Giải tích,calculus,Tính giới hạn hàm số tại một điểm
+362,HighSchool,11,Math,Giải tích,calculus,Tính giới hạn một bên của hàm số
+363,HighSchool,11,Math,Giải tích,calculus,So sánh tốc độ tăng của hai dãy số
+364,HighSchool,11,Math,Giải tích,calculus,Chứng minh giới hạn bằng định nghĩa
+365,HighSchool,11,Math,Giải tích,calculus,Tính giới hạn dãy số khi n tiến tới vô cực
+
+366,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm của hàm hợp
+367,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm phân thức
+368,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm mũ
+369,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm hàm logarit
+370,HighSchool,11,Math,Đạo hàm,calculus,Viết phương trình tiếp tuyến tại điểm cho trước
+
+371,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Tìm cực trị của hàm số
+372,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Tìm giá trị lớn nhất của hàm số
+373,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Tìm giá trị nhỏ nhất của hàm số
+374,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Xét sự đồng biến nghịch biến
+375,HighSchool,12,Math,Ứng dụng đạo hàm,calculus,Lập bảng biến thiên của hàm số
+
+376,HighSchool,12,Math,Tích phân,calculus,Tính tích phân xác định
+377,HighSchool,12,Math,Tích phân,calculus,Tính tích phân từng phần
+378,HighSchool,12,Math,Tích phân,calculus,Tính tích phân đổi biến
+379,HighSchool,12,Math,Tích phân,calculus,Ứng dụng tích phân tính diện tích
+380,HighSchool,12,Math,Tích phân,calculus,Ứng dụng tích phân tính thể tích
+
+381,University,University,Math,Giải tích,calculus,Tính tích phân suy rộng
+382,University,University,Math,Giải tích,calculus,Kiểm tra hội tụ tích phân
+383,University,University,Math,Giải tích,calculus,Xét sự hội tụ chuỗi số
+384,University,University,Math,Giải tích,calculus,Xét sự hội tụ đều của dãy hàm
+385,University,University,Math,Giải tích,calculus,Tính đạo hàm riêng của hàm nhiều biến
+
+386,University,University,Math,Giải tích,calculus,Tính đạo hàm theo hướng
+387,University,University,Math,Giải tích,calculus,Tính tích phân bội
+388,University,University,Math,Giải tích,calculus,Tính tích phân đường
+389,University,University,Math,Giải tích,calculus,Tính tích phân mặt
+390,University,University,Math,Giải tích,calculus,Ứng dụng đạo hàm trong tối ưu hóa
+
+391,University,University,Math,Đại số tuyến tính,linear_algebra,Tính định thức của ma trận
+392,University,University,Math,Đại số tuyến tính,linear_algebra,Tính ma trận nghịch đảo
+393,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm hạng của ma trận
+394,University,University,Math,Đại số tuyến tính,linear_algebra,Giải hệ phương trình tuyến tính
+395,University,University,Math,Đại số tuyến tính,linear_algebra,Chứng minh các vector độc lập tuyến tính
+
+396,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm trị riêng của ma trận
+397,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm vector riêng tương ứng
+398,University,University,Math,Đại số tuyến tính,linear_algebra,Chéo hóa ma trận
+399,University,University,Math,Đại số tuyến tính,linear_algebra,Xác định cơ sở của không gian vector
+400,University,University,Math,Đại số tuyến tính,linear_algebra,Tính chuẩn của vector
+
+401,University,University,Math,Xác suất,probability,Tính xác suất biến cố độc lập
+402,University,University,Math,Xác suất,probability,Tính xác suất có điều kiện
+403,University,University,Math,Xác suất,probability,Tính xác suất theo biến cố bổ sung
+404,University,University,Math,Xác suất,probability,Tính phân phối nhị thức
+405,University,University,Math,Xác suất,probability,Tính phân phối Poisson
+
+406,University,University,Math,Xác suất,probability,Tính phân phối chuẩn
+407,University,University,Math,Xác suất,probability,Tính kỳ vọng của biến ngẫu nhiên
+408,University,University,Math,Xác suất,probability,Tính phương sai của biến ngẫu nhiên
+409,University,University,Math,Thống kê,statistics,Tính trung bình cộng của mẫu
+410,University,University,Math,Thống kê,statistics,Tính phương sai mẫu
+
+411,University,University,Math,Thống kê,statistics,Tính độ lệch chuẩn của mẫu
+412,University,University,Math,Thống kê,statistics,Lập bảng tần số và tần suất
+413,University,University,Math,Thống kê,statistics,Ước lượng tham số thống kê
+414,University,University,Math,Thống kê,statistics,Kiểm định giả thuyết thống kê
+415,University,University,Math,Thống kê,statistics,Xây dựng khoảng tin cậy
+
+416,University,University,Math,Logic toán,logic,Xác định giá trị chân lý của mệnh đề
+417,University,University,Math,Logic toán,logic,Chứng minh mệnh đề bằng phản chứng
+418,University,University,Math,Logic toán,logic,Chứng minh mệnh đề bằng quy nạp
+419,University,University,Math,Logic toán,logic,Áp dụng luật De Morgan
+420,University,University,Math,Logic toán,logic,Phân tích mệnh đề kéo theo
+
+421,University,University,Math,Toán rời rạc,logic,Tính số hoán vị của tập hợp
+422,University,University,Math,Toán rời rạc,logic,Tính số chỉnh hợp không lặp
+423,University,University,Math,Toán rời rạc,logic,Tính số tổ hợp chập k
+424,University,University,Math,Toán rời rạc,logic,Đếm số cách sắp xếp phần tử
+425,University,University,Math,Toán rời rạc,logic,Đếm số cách chọn phần tử
+
+426,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp một
+427,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tách biến
+428,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân tuyến tính
+429,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân Bernoulli
+430,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp hai
+
+431,University,University,Math,Phương trình vi phân,differential_equations,Giải bài toán Cauchy
+432,University,University,Math,Phương trình vi phân,differential_equations,Giải hệ phương trình vi phân
+433,University,University,Math,Phương trình vi phân,differential_equations,Ứng dụng phương trình vi phân trong vật lý
+434,University,University,Math,Phương trình vi phân,differential_equations,Ứng dụng phương trình vi phân trong sinh học
+435,University,University,Math,Phương trình vi phân,differential_equations,Ứng dụng phương trình vi phân trong kinh tế
+
+436,University,University,Math,Giải tích,calculus,Tính chuỗi Fourier
+437,University,University,Math,Giải tích,calculus,Tính biến đổi Laplace
+438,University,University,Math,Giải tích,calculus,Tính biến đổi Fourier
+439,University,University,Math,Giải tích,calculus,Giải phương trình vi phân bằng Laplace
+440,University,University,Math,Giải tích,calculus,Ứng dụng chuỗi Fourier
+
+441,University,University,Math,Đại số tuyến tính,linear_algebra,Giải bài toán ánh xạ tuyến tính
+442,University,University,Math,Đại số tuyến tính,linear_algebra,Xác định không gian nghiệm
+443,University,University,Math,Đại số tuyến tính,linear_algebra,Tính tích tensor
+444,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng ma trận trong đồ thị
+445,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng vector trong hình học
+
+446,University,University,Math,Xác suất,probability,Tính xác suất trong không gian mẫu hữu hạn
+447,University,University,Math,Xác suất,probability,Tính xác suất trong bài toán urn
+448,University,University,Math,Xác suất,probability,Tính xác suất trong mô hình Bernoulli
+449,University,University,Math,Thống kê,statistics,Phân tích hồi quy tuyến tính
+450,University,University,Math,Thống kê,statistics,Phân tích hồi quy đa biến
+
+451,University,University,Math,Thống kê,statistics,Phân tích tương quan
+452,University,University,Math,Thống kê,statistics,Dự báo bằng mô hình thống kê
+453,University,University,Math,Logic toán,logic,Chứng minh tương đương logic
+454,University,University,Math,Logic toán,logic,Phân tích suy diễn logic
+455,University,University,Math,Logic toán,logic,Ứng dụng logic trong khoa học máy tính
+
+456,University,University,Math,Toán rời rạc,logic,Tính số đồ thị đơn
+457,University,University,Math,Toán rời rạc,logic,Đếm số cây khung của đồ thị
+458,University,University,Math,Toán rời rạc,logic,Áp dụng nguyên lý Dirichlet
+459,University,University,Math,Toán rời rạc,logic,Giải bài toán Ramsey đơn giản
+460,University,University,Math,Toán rời rạc,logic,Ứng dụng đồ thị trong mạng máy tính
+
+461,University,University,Math,Giải tích,calculus,Tính tích phân đường trong không gian
+462,University,University,Math,Giải tích,calculus,Tính tích phân mặt trong không gian
+463,University,University,Math,Giải tích,calculus,Giải phương trình đạo hàm riêng
+464,University,University,Math,Giải tích,calculus,Ứng dụng đạo hàm riêng trong vật lý
+465,University,University,Math,Giải tích,calculus,Ứng dụng đạo hàm riêng trong kinh tế
+
+466,University,University,Math,Đại số tuyến tính,linear_algebra,Tính giá trị riêng suy rộng
+467,University,University,Math,Đại số tuyến tính,linear_algebra,Phân tích giá trị kỳ dị
+468,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng SVD trong nén dữ liệu
+469,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng PCA trong giảm chiều
+470,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong ML
+
+471,University,University,Math,Xác suất,probability,Mô phỏng Monte Carlo
+472,University,University,Math,Xác suất,probability,Luật số lớn
+473,University,University,Math,Xác suất,probability,Định lý giới hạn trung tâm
+474,University,University,Math,Thống kê,statistics,Ước lượng cực đại hợp lý
+475,University,University,Math,Thống kê,statistics,Mô hình hóa thống kê dữ liệu
+
+476,University,University,Math,Logic toán,logic,Logic mệnh đề trong trí tuệ nhân tạo
+477,University,University,Math,Logic toán,logic,Logic vị từ cơ bản
+478,University,University,Math,Logic toán,logic,Suy luận logic trong hệ chuyên gia
+479,University,University,Math,Logic toán,logic,Ứng dụng logic trong suy luận tự động
+480,University,University,Math,Logic toán,logic,Logic hình thức trong toán học
+
+481,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân riêng phần
+482,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình sóng một chiều
+483,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình nhiệt
+484,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình Laplace
+485,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình Poisson
+
+486,University,University,Math,Giải tích,calculus,Giải phương trình tích phân
+487,University,University,Math,Giải tích,calculus,Ứng dụng phương trình tích phân
+488,University,University,Math,Giải tích,calculus,Giải phương trình đạo hàm riêng phi tuyến
+489,University,University,Math,Giải tích,calculus,Ứng dụng giải tích trong tối ưu hóa
+490,University,University,Math,Giải tích,calculus,Giải bài toán biến phân
+
+491,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong xử lý ảnh
+492,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong thị giác máy tính
+493,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong NLP
+494,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong robot
+495,University,University,Math,Đại số tuyến tính,linear_algebra,Ứng dụng đại số tuyến tính trong khoa học dữ liệu
+
+496,University,University,Math,Toán rời rạc,logic,Thuật toán duyệt đồ thị BFS
+497,University,University,Math,Toán rời rạc,logic,Thuật toán duyệt đồ thị DFS
+498,University,University,Math,Toán rời rạc,logic,Bài toán đường đi ngắn nhất
+499,University,University,Math,Toán rời rạc,logic,Bài toán cây bao trùm nhỏ nhất
+500,University,University,Math,Toán rời rạc,logic,Bài todán tô màu đồ thị
+
+ 
+1001,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm của hàm số y = x^2 + 3x + 1
+1002,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm của hàm số $y = x^2 + 3x + 1$
+1003,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm của hàm số $f(x) = x^3$
+1004,HighSchool,11,Math,Đạo hàm,calculus,Tính đạo hàm của $f(x) = x^n$
+
+1005,HighSchool,12,Math,Tích phân,calculus,Tính tích phân xác định từ 0 đến 1 của hàm số x^2
+1006,HighSchool,12,Math,Tích phân,calculus,Tính tích phân $\int_0^1 x^2 dx$
+1007,HighSchool,12,Math,Tích phân,calculus,Tính tích phân $\int_a^b f(x) dx$
+1008,HighSchool,12,Math,Tích phân,calculus,Tính tích phân suy rộng $\int_0^{+\infty} e^{-x} dx$
+
+1009,HighSchool,10,Math,Phương trình,algebra,Giải phương trình bậc hai x^2 - 3x + 2 = 0
+1010,HighSchool,10,Math,Phương trình,algebra,Giải phương trình $x^2 - 3x + 2 = 0$
+1011,HighSchool,10,Math,Phương trình,algebra,Giải phương trình $\frac{x+1}{x-1} = 2$
+1012,HighSchool,10,Math,Phương trình,algebra,Giải phương trình $\sqrt{x+1} = 3$
+
+1013,HighSchool,10,Math,Hình học,geometry,Tính diện tích hình tròn bán kính r
+1014,HighSchool,10,Math,Hình học,geometry,Tính diện tích hình tròn $S = \pi r^2$
+1015,HighSchool,10,Math,Hình học,geometry,Tính chu vi đường tròn $C = 2\pi r$
+
+1016,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm định thức của ma trận A
+1017,University,University,Math,Đại số tuyến tính,linear_algebra,Tìm định thức của ma trận $A = \begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix}$
+1018,University,University,Math,Đại số tuyến tính,linear_algebra,Giải hệ phương trình $AX = B$
+
+1019,University,University,Math,Giải tích,calculus,Tính giới hạn của dãy số
+1020,University,University,Math,Giải tích,calculus,Tính giới hạn $\lim_{x \to 0} \frac{\sin x}{x}$
+1021,University,University,Math,Giải tích,calculus,Tính giới hạn $\lim_{n \to \infty} \frac{1}{n}$
+
+1022,University,University,Math,Xác suất,probability,Tính xác suất biến cố A
+1023,University,University,Math,Xác suất,probability,Tính xác suất $P(A \cap B)$
+1024,University,University,Math,Xác suất,probability,Tính xác suất có điều kiện $P(A|B)$
+
+1025,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân cấp một
+1026,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân $\frac{dy}{dx} = y$
+1027,University,University,Math,Phương trình vi phân,differential_equations,Giải phương trình vi phân $\frac{dy}{dx} + y = 0$
