@@ -7,7 +7,7 @@ import os
 
 VNCORENLP_DIR = os.getenv(
     "VNCORENLP_DIR",
-    "/home/linh/vncorenlp"   
+    "/var/www/html/fastapi"   
 )
 
 MODEL_NAME = "vinai/phobert-large"

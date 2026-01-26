@@ -1,7 +1,10 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, BackgroundTasks 
 from typing import Union
 from app.ai.embedding import embed
-from app.server.database import question_collection
+from app.server.database import question_collection, bank_collection, label_collection
+import traceback
+from pathlib import Path
+
 router = APIRouter()
 
 @router.get("/")
@@ -28,3 +31,29 @@ async def embed_api():
         q["_id"] = str(q["_id"])
         questions.append(q)
     return questions
+
+
+
+
+
+
+MODELS_DIR = Path("models/data")
+
+@router.get("/job")
+async def job_api():
+    MODELS_DIR.mkdir(parents=True, exist_ok=True)
+    results = await bank_collection.find().to_list()
+    created = []
+    for item in results:
+        bank_id = str(item["_id"])
+        item["_id"] = bank_id
+        bank_dir = MODELS_DIR / bank_id
+        bank_dir.mkdir(exist_ok=True)
+        created.append(str(bank_dir))
+
+    return {
+        "status": "ok",
+        "banks": len(results),
+        "folders": created
+    }
+

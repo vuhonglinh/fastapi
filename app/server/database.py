@@ -6,4 +6,6 @@ client = AsyncIOMotorClient(MONGO_DETAILS)
 
 database = client.edly
 
+bank_collection = database.get_collection("banks")
+label_collection = database.get_collection("labels")
 question_collection = database.get_collection("questions")
