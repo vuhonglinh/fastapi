@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 from app.routers.api import router
-import os
-import uvicorn 
-print("CWD:", os.getcwd())
+from config import Settings
+import uvicorn
 
-app = FastAPI(title=os.getenv("APP_NAME", "FastAPI"))
+settings = Settings()
 
-app.include_router(router)
+app = FastAPI(title=settings.app_name)
 
+app.include_router(router) 
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8002)
+ 

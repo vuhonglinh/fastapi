@@ -2,8 +2,11 @@ from fastapi import APIRouter, BackgroundTasks
 from typing import Union
 from app.ai.embedding import embed
 from app.server.database import question_collection, bank_collection, label_collection
-import traceback
+from config import Settings 
+from app.ai.train import handle_label  
 from pathlib import Path
+
+settings = Settings()
 
 router = APIRouter()
 
@@ -32,28 +35,51 @@ async def embed_api():
         questions.append(q)
     return questions
 
+@router.post("/train/{bank_id}")
+async def train_bank(
+    bank_id: str, 
+    background_tasks: BackgroundTasks
+):
+    bank_dir = settings.models_dir / bank_id
+    bank_dir.mkdir(parents=True, exist_ok=True)
+    if not bank_dir.exists():
+        return {
+            "status": "error",
+            "message": "Bank model directory not found"
+        }
 
-
-
-
-
-MODELS_DIR = Path("models/data")
-
-@router.get("/job")
-async def job_api():
-    MODELS_DIR.mkdir(parents=True, exist_ok=True)
-    results = await bank_collection.find().to_list()
-    created = []
-    for item in results:
-        bank_id = str(item["_id"])
-        item["_id"] = bank_id
-        bank_dir = MODELS_DIR / bank_id
-        bank_dir.mkdir(exist_ok=True)
-        created.append(str(bank_dir))
+    background_tasks.add_task(
+        handle_label,
+        bank_id
+    )
 
     return {
-        "status": "ok",
-        "banks": len(results),
-        "folders": created
+        "status": "queued",
+        "bank_id": bank_id,
+        "message": "Training job started in background"
     }
+    
+@router.post("/job/train-all")
+async def train_all_banks(
+    csv_base_dir: str,
+    background_tasks: BackgroundTasks
+):
+    banks = [
+        p.name for p in settings.models_dir.iterdir()
+        if p.is_dir()
+    ]
 
+    for bank_id in banks:
+        csv_path = Path(csv_base_dir) / f"{bank_id}.csv"
+        if csv_path.exists():
+            background_tasks.add_task(
+                handle_label,
+                bank_id,
+                str(csv_path)
+            )
+
+    return {
+        "status": "queued",
+        "banks": len(banks),
+        "message": "All training jobs queued"
+    }

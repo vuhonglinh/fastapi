@@ -2,14 +2,11 @@ import torch
 import py_vncorenlp
 from transformers import AutoTokenizer, AutoModel
 import os
- 
- 
+from config import Settings
 
-VNCORENLP_DIR = os.getenv(
-    "VNCORENLP_DIR",
-    "/var/www/html/fastapi"   
-)
+settings = Settings()
 
+VNCORENLP_DIR = settings.vncorenlp_dir 
 MODEL_NAME = "vinai/phobert-large"
  
 rdrsegmenter = py_vncorenlp.VnCoreNLP(

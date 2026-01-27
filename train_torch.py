@@ -6,14 +6,13 @@ from torch import nn
 from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 from datetime import datetime
+from config import Settings
 
 from app.ai.embedding import embed
-
-# =====================
-# CONFIG
-# =====================
-CSV_PATH = "/var/www/html/fastapi/text.csv"
-BASE_MODEL_DIR = "models/skill_classifier"
+settings = Settings()
+ 
+CSV_PATH = settings.csv_path
+BASE_MODEL_DIR = settings.vncorenlp_dir
 TARGET_COL = "skill_id"
 
 BATCH_SIZE = 32
