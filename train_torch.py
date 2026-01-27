@@ -5,7 +5,7 @@ from config import Settings
 
 settings = Settings()
 
-MODEL_NAME = "FacebookAI/roberta-base"
+MODEL_NAME = "FacebookAI/roberta-large"
 
 tokenizer = AutoTokenizer.from_pretrained(
     MODEL_NAME,
@@ -27,6 +27,7 @@ def embed(text: str) -> torch.Tensor:
         truncation=True,
         max_length=256
     )
+    print(text)
     print(inputs)
     with torch.no_grad():
         outputs = model(**inputs)
@@ -42,7 +43,7 @@ def embed(text: str) -> torch.Tensor:
     return embedding.squeeze(0)
 
 if __name__ == "__main__":
-    text = ("To ensure that PyTorch was installed correctly, we can verify the installation by running sample PyTorch code. Here we will construct a randomly initialized tensor.")
+    text = ("My name is Linh")
 
     vec = embed(text)
     print(vec)

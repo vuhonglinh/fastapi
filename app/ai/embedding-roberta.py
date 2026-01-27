@@ -5,7 +5,7 @@ from config import Settings
 
 settings = Settings()
 
-MODEL_NAME = "FacebookAI/roberta-base"
+MODEL_NAME = "FacebookAI/roberta-large"
 
 tokenizer = AutoTokenizer.from_pretrained(
     MODEL_NAME,
