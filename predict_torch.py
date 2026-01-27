@@ -8,7 +8,6 @@ from app.ai.embedding import embed
 CKPT_PATH = "models/torch_classifier.pt"
 
 ckpt = torch.load(CKPT_PATH, map_location="cpu")
-
 label2id = ckpt["label2id"]
 id2label = {v: k for k, v in label2id.items()}
 EMBED_DIM = ckpt["embed_dim"]

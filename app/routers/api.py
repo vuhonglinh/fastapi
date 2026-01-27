@@ -1,10 +1,14 @@
+import torch
+from torch import nn
 from fastapi import APIRouter, BackgroundTasks 
 from typing import Union
 from app.ai.embedding import embed
 from app.server.database import question_collection, bank_collection, label_collection
 from config import Settings 
 from app.ai.train import handle_label  
+from app.ai.model_loader import load_model  
 from pathlib import Path
+from pydantic import BaseModel
 
 settings = Settings()
 
@@ -25,16 +29,6 @@ def embed_api(payload: str):
         "dim": vec.shape[0],
         "vector": vec.tolist()
     }
-
-
-@router.get("/train-data")
-async def embed_api():
-    questions = []
-    async for q in question_collection.find():
-        q["_id"] = str(q["_id"])
-        questions.append(q)
-    return questions
-
 @router.post("/train/{bank_id}")
 async def train_bank(
     bank_id: str, 
@@ -80,4 +74,39 @@ async def train_all_banks(
         "status": "queued",
         "banks": len(banks),
         "message": "All training jobs queued"
+    }
+
+
+
+class BankPredict(BaseModel):
+    bank_id: str
+    text: str
+@router.post("/predict-label")
+async def predict_label(req: BankPredict):
+    if not req.text.strip() or not req.bank_id.strip():
+        raise HTTPException(status_code=400, detail="Text or bank_id is empty")
+
+    try:
+        model, label2id, id2label = load_model(req.bank_id)
+    except FileNotFoundError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+    x = embed(req.text).unsqueeze(0)  
+    print(x)
+    with torch.no_grad():
+        logits = model(x)
+        probs = torch.softmax(logits, dim=1)
+
+    top_id = probs.argmax(dim=1).item()
+    confidence = probs[0, top_id].item()
+
+    return {
+        "bank_id": req.bank_id,
+        "text": req.text,
+        "predicted_label": id2label[top_id],
+        "confidence": round(confidence, 4),
+        "scores": {
+            id2label[i]: round(probs[0, i].item(), 4)
+            for i in range(len(id2label))
+        },
     }

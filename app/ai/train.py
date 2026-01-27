@@ -238,21 +238,6 @@ async def handle_label(bank_id: str):
         "finetune": finetune
     }
 
-
-# def update_latest(bank_dir: Path, model_dir: Path):
-#     latest = bank_dir / "latest"
-
-#     if latest.exists() or latest.is_symlink():
-#         if latest.is_symlink() or latest.is_file():
-#             latest.unlink()
-#         else:
-#             shutil.rmtree(latest)
-
-#     try:
-#         latest.symlink_to(model_dir, target_is_directory=True)
-#     except OSError:
-#         shutil.copytree(model_dir, latest)
-
 def update_latest(bank_dir: Path, model_dir: Path):
     latest = bank_dir / "latest"
 
