@@ -79,7 +79,7 @@ async def handle_label(bank_id: str):
     questions = await question_collection.find(
         {"labels": {"$in": label_ids}}
     ).to_list(None) 
-
+    
     if not questions:
         raise ValueError("No questions found for training")
 
@@ -108,6 +108,9 @@ async def handle_label(bank_id: str):
 
     X = torch.stack(X)
     dataset = TensorDataset(X, y)
+    log(bank_dir, X)
+    log(bank_dir, y)
+
     loader = DataLoader(
         dataset,
         batch_size=settings.batch_size,
@@ -234,3 +237,4 @@ def update_latest(bank_dir: Path, model_dir: Path):
         latest.symlink_to(model_dir, target_is_directory=True)
     except OSError:
         shutil.copytree(model_dir, latest)
+

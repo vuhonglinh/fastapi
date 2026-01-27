@@ -27,7 +27,7 @@ def embed(text: str) -> torch.Tensor:
         truncation=True,
         max_length=256
     )
-    print(inputs)
+
     with torch.no_grad():
         outputs = model(**inputs)
 
@@ -42,7 +42,10 @@ def embed(text: str) -> torch.Tensor:
     return embedding.squeeze(0)
 
 if __name__ == "__main__":
-    text = ("To ensure that PyTorch was installed correctly, we can verify the installation by running sample PyTorch code. Here we will construct a randomly initialized tensor.")
+    text = (
+        "Xét hàm số f(x) = x^3 - 3x^2 + 2x - 1. "
+        "Tính đạo hàm và xét cực trị của hàm số."
+    )
 
     vec = embed(text)
     print(vec)

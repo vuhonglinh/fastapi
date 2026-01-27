@@ -60,8 +60,7 @@ async def train_bank(
     }
     
 @router.post("/job/train-all")
-async def train_all_banks(
-    csv_base_dir: str,
+async def train_all_banks( 
     background_tasks: BackgroundTasks
 ):
     banks = [
@@ -74,8 +73,7 @@ async def train_all_banks(
         if csv_path.exists():
             background_tasks.add_task(
                 handle_label,
-                bank_id,
-                str(csv_path)
+                bank_id, 
             )
 
     return {
