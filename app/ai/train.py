@@ -10,7 +10,7 @@ from datetime import datetime
 import shutil
 from config import settings
 from app.ai.embedding import embed
-from app.server.database import question_collection, label_collection
+from app.server.database import question_collection, label_collection, bank_model_collection
 
 
 def get_next_version(bank_dir: Path) -> str:
@@ -66,8 +66,10 @@ async def handle_label(bank_id: str):
         {"bank_id": bank_id}
     ).to_list(None) 
     
-    if not labels:
-        raise ValueError(f"No labels found for bank {bank_id}")
+    if not labels: 
+        return {
+        "message": True
+        }
 
     label_ids = [str(l["_id"]) for l in labels]
     label_id_to_name = {
@@ -108,8 +110,6 @@ async def handle_label(bank_id: str):
 
     X = torch.stack(X)
     dataset = TensorDataset(X, y)
-    log(bank_dir, X)
-    log(bank_dir, y)
 
     loader = DataLoader(
         dataset,
@@ -134,7 +134,6 @@ async def handle_label(bank_id: str):
     latest_label_map = latest_dir / "label_map.json"
 
     finetune = False
-
     if latest_model.exists() and latest_label_map.exists():
         with open(latest_label_map, "r", encoding="utf-8") as f:
             old_label2id = json.load(f)
@@ -150,7 +149,7 @@ async def handle_label(bank_id: str):
     else:
         log(bank_dir, "🆕 No previous model → train from scratch")
 
- 
+
     criterion = nn.CrossEntropyLoss()  # hàm phạt
 
     # nếu fine-tune → giảm learning rate
@@ -216,6 +215,22 @@ async def handle_label(bank_id: str):
 
     log(bank_dir, f"✅ Training {version} DONE")
 
+    await bank_model_collection.insert_one({
+    "bank_id": bank_id,
+    "version": version,
+    "path": str(model_dir),
+    "embed_dim": settings.embed_dim,
+    "num_classes": num_classes,
+    "num_samples": len(dataset),
+    "accuracy": acc,
+    "avg_confidence": avg_conf,
+    "finetune": finetune,
+    "label_map": label2id,
+    "status": "active",
+    "trained_at": datetime.utcnow()
+    })
+
+
     return {
         "bank_id": bank_id,
         "version": version,
@@ -224,17 +239,24 @@ async def handle_label(bank_id: str):
     }
 
 
+# def update_latest(bank_dir: Path, model_dir: Path):
+#     latest = bank_dir / "latest"
+
+#     if latest.exists() or latest.is_symlink():
+#         if latest.is_symlink() or latest.is_file():
+#             latest.unlink()
+#         else:
+#             shutil.rmtree(latest)
+
+#     try:
+#         latest.symlink_to(model_dir, target_is_directory=True)
+#     except OSError:
+#         shutil.copytree(model_dir, latest)
+
 def update_latest(bank_dir: Path, model_dir: Path):
     latest = bank_dir / "latest"
 
-    if latest.exists() or latest.is_symlink():
-        if latest.is_symlink() or latest.is_file():
-            latest.unlink()
-        else:
-            shutil.rmtree(latest)
+    if latest.exists():
+        shutil.rmtree(latest)
 
-    try:
-        latest.symlink_to(model_dir, target_is_directory=True)
-    except OSError:
-        shutil.copytree(model_dir, latest)
-
+    shutil.copytree(model_dir, latest)

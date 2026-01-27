@@ -8,7 +8,7 @@ __pycache__/
 .eggs/
 dist/
 build/
-
+models/
  
 venv/
 .venv/
