@@ -9,6 +9,8 @@ from app.ai.train import handle_label
 from app.ai.model_loader import load_model  
 from pathlib import Path
 from pydantic import BaseModel
+from qdrant_client.models import PointStruct
+from app.core.qdrant import client, COLLECTION_NAME
 
 settings = Settings()
 
@@ -18,17 +20,48 @@ router = APIRouter()
 def read_root():
     return {"Hello": "World"}
 
-@router.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+class QuestionIn(BaseModel):
+    question: str
+    answer: str
+    bank_id: str | None = None
+@router.post("/questions")
+async def create_question(req: QuestionIn):
+    if not req.question.strip():
+        raise HTTPException(status_code=400, detail="Question is empty")
 
-@router.get("/embed/{payload}")
-def embed_api(payload: str):
-    vec = embed(payload)
-    return {
-        "dim": vec.shape[0],
-        "vector": vec.tolist()
+    # 1. Lưu Mongo
+    doc = {
+        "question": req.question,
+        "answer": req.answer,
+        "bank_id": req.bank_id
     }
+    result = question_collection.insert_one(doc)
+    qid = str(result.inserted_id)
+
+    # 2. Embed
+    vector = embed(req.question).tolist()
+
+    # 3. Lưu Qdrant
+    client.upsert(
+        collection_name=COLLECTION_NAME,
+        points=[
+            PointStruct(
+                id=qid,
+                vector=vector,
+                payload={
+                    "bank_id": req.bank_id,
+                    "type": "question"
+                }
+            )
+        ]
+    )
+
+    return {
+        "status": "ok",
+        "id": qid
+    }
+    
+    
 @router.post("/train/{bank_id}")
 async def train_bank(
     bank_id: str, 
