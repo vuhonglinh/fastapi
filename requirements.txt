@@ -3,6 +3,14 @@ uvicorn[standard]
 pymongo
 python-dotenv
 pydantic
-shutil
-sys
 apscheduler
+torch
+transformers
+datasets
+beautifulsoup4
+peft
+accelerate
+py_vncorenlp
+pydantic_settings
+motor
+qdrant_client

@@ -6,7 +6,8 @@ from pathlib import Path
 load_dotenv()
 
 class Settings(BaseSettings):
-    models_dir: Path = Path("models/edupen")
+    models_dir: Path = Path("models/edupen")    
+    models_dir_edly: Path = Path("models/edly")
     vncorenlp_dir: str = os.getenv('VNCORENLP_DIR')
     csv_path: str = os.getenv('CSV_PATH')
     app_name: str = os.getenv("APP_NAME")
